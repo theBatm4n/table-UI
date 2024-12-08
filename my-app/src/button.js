@@ -1,18 +1,15 @@
 import React, {useRef} from 'react'
-import { useHover } from 'usehooks-ts';
 import './App.css';
 
 const colors = ['button_green', 'button_blue', 'button_orange', 'button_red', 'button_yellow'];
 
-const Button = ({value, selectedTopics, handleClick }) => {
-    const hoverRef = useRef(null)
-    const isHover = useHover(hoverRef)
-    const index = selectedTopics.indexOf(value) % 5;  // using the index of topic in filtered topic for colours
+const Button = ({value, selectedTopics, colorIndex, handleClick }) => {
 
-    const className = selectedTopics.includes(value) ? colors[index] : 'button';
+    const index = selectedTopics.indexOf(value) % 5;
+    const className = selectedTopics.includes(value) ? colors[index] : 'button_default'
 
     return (
-    <button className= {`${className} ${isHover ? 'hover' : ''}`} onClick={() => handleClick(value)}> 
+    <button className= {`${className} button`} onClick={() => handleClick(value)}> 
         {value} 
     </button>
     )
