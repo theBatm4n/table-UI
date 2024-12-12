@@ -20,14 +20,24 @@ const App = () => {
       }
     }, [selectedTopics])
 
-   
+
     const rowData = useMemo(() => [
       { ticker: "#TCS.NS", segment: "#HotelDivision", metric: "#SegmentRevenue_AsReported", Date: "2024-09-11", Timeperiod: '3M ', Unit:"INR", Value: "19.19m" },
       { ticker: "#CANDC.NS", segment: "#ITServices", metric: "#SegmentAssets_AsReported", Date: "2024-09-15", Timeperiod: '1Y ', Unit:"USD", Value: "5.67b" },
       { ticker: "#CYBERMEDIA.NS", segment: "#Media", metric: "#SegmentAssets_AsReported", Date: "2024-09-20", Timeperiod: '6M ', Unit:"EUR", Value: "8.42m" },
       { ticker: "#CANDC.NS", segment: "#Textiles", metric: "#SegmentRevenue_AsReported", Date: "2024-09-25", Timeperiod: '2Y ', Unit:"JPY", Value: "3.91b" },
       { ticker: "#CYBERMEDIA.NS", segment: "#Media", metric: "#SegmentLiabilities_AsReported", Date: "2024-09-30", Timeperiod: '1Y ', Unit:"USD", Value: "15.75b" },
-      { ticker: "#TCS.NS", segment: "#Textiles", metric: "#SegmentLiabilities_AsReported", Date: "2024-10-05", Timeperiod: '3M ', Unit:"GBP", Value: "2.19b" }
+      { ticker: "#TCS.NS", segment: "#Textiles", metric: "#SegmentLiabilities_AsReported", Date: "2024-10-05", Timeperiod: '3M ', Unit:"GBP", Value: "2.19b" },
+      { ticker: "#INFY.NS", segment: "#Retail", metric: "#SegmentRevenue_AsReported", Date: "2024-10-10", Timeperiod: '6M ', Unit:"INR", Value: "7.89b" },
+      { ticker: "#HDFC.NS", segment: "#Finance", metric: "#SegmentAssets_AsReported", Date: "2024-10-15", Timeperiod: '1Y ', Unit:"USD", Value: "10.32b" },
+      { ticker: "#RELIANCE.NS", segment: "#Energy", metric: "#SegmentAssets_AsReported", Date: "2024-10-20", Timeperiod: '2Y ', Unit:"EUR", Value: "18.76b" },
+      { ticker: "#HDFC.NS", segment: "#Insurance", metric: "#SegmentRevenue_AsReported", Date: "2024-10-25", Timeperiod: '3M ', Unit:"JPY", Value: "6.45b" },
+      { ticker: "#RELIANCE.NS", segment: "#Energy", metric: "#SegmentLiabilities_AsReported", Date: "2024-10-30", Timeperiod: '1Y ', Unit:"USD", Value: "12.87b" },
+      { ticker: "#INFY.NS", segment: "#Retail", metric: "#SegmentLiabilities_AsReported", Date: "2024-11-05", Timeperiod: '6M ', Unit:"GBP", Value: "3.56b" },
+      { ticker: "#WIPRO.NS", segment: "#Technology", metric: "#SegmentRevenue_AsReported", Date: "2024-11-10", Timeperiod: '1Y ', Unit:"INR", Value: "4.78b" },
+      { ticker: "#WIPRO.NS", segment: "#Technology", metric: "#SegmentAssets_AsReported", Date: "2024-11-15", Timeperiod: '2Y ', Unit:"USD", Value: "9.24b" },
+      { ticker: "#INFY.NS", segment: "#Retail", metric: "#SegmentLiabilities_AsReported", Date: "2024-11-20", Timeperiod: '3M ', Unit:"EUR", Value: "5.68b" },
+      { ticker: "#HDFC.NS", segment: "#Finance", metric: "#SegmentLiabilities_AsReported", Date: "2024-11-25", Timeperiod: '1Y ', Unit:"JPY", Value: "9.34b" }
     ], []);
   
     const colDefs = useMemo(() => [

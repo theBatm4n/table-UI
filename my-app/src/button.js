@@ -9,7 +9,7 @@ const Button = ({value, selectedTopics, handleClick }) => {
     const isHover = useHover(hoverRef)
     const index = selectedTopics.indexOf(value) % 5;  // using the index of topic in filtered topic for colours
 
-    const className = selectedTopics.includes(value) ? colors[index] : 'button';
+    const className = selectedTopics.includes(value) ? colors[index]  : 'button';
 
     return (
     <button className= {`${className} ${isHover ? 'hover' : ''}`} onClick={() => handleClick(value)}> 
