@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@questdb/nodejs-client": "^3.0.0"
+  }
+}
